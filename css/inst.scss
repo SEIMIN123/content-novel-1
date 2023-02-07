@@ -38,7 +38,7 @@
 
         & > div {
 
-            width: 80vw;
+            width: 90vw;
             height: 10vh;
             font-size: 4vw;
             color: #ffffff;
@@ -67,6 +67,9 @@
         width: 100vw;
         height: 100vh;
         background-color: black; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @include flex(flex, center, center);
 
@@ -74,7 +77,7 @@
 
             width: 100vw;
             height: 10vh;
-            font-size: 5.3vw;
+            font-size: 4.5vw;
             transition: 7s;
             color: #fff;
             font-family: 'Song Myung', serif;

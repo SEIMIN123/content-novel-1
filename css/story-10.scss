@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
   #root {
 
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background: url(../pic/sunset.jpg);
     background-size: cover;
     background-position: center center;
@@ -66,8 +66,8 @@ body::-webkit-scrollbar {
 
     #text {
       width: 100vw;
-      height: 100vh;
-      font-size: 4.7vw;
+      height: 120vh;
+      font-size: 5vw;
       text-align: left;
       font-weight: bold;
       font-family: 'Times New Roman', Times, serif;
