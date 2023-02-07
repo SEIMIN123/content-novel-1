@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes smooth {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes smooth {
   0% {
     opacity: 0;
@@ -40,8 +28,7 @@
     width: 50vw;
     height: 20vh;
     color: #fff;
-    -webkit-animation: smooth 4s;
-            animation: smooth 4s;
+    animation: smooth 4s;
     font-size: 500%;
     font-family: "Song Myung", serif;
     cursor: pointer;
@@ -63,8 +50,7 @@
     width: 100vw;
     height: 100vh;
     color: #fff;
-    -webkit-animation: smooth 5s;
-            animation: smooth 5s;
+    animation: smooth 5s;
     font-size: 11vw;
     font-family: "Song Myung", serif;
     display: flex;

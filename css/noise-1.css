@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes cursor {
-  0% {
-    border-right: 5px solid #fff;
-  }
-  50% {
-    border-right: 5px solid #000;
-  }
-  100% {
-    border-right: 5px solid #fff;
-  }
-}
-
 @keyframes cursor {
   0% {
     border-right: 5px solid #fff;
@@ -50,8 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-animation: cursor 0.5s ease infinite;
-            animation: cursor 0.5s ease infinite;
+    animation: cursor 0.5s ease infinite;
     cursor: pointer;
   }
 }
@@ -74,8 +61,7 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 10vw;
     font-family: "Song Myung", serif;
-    -webkit-animation: cursor 0.5s ease infinite;
-            animation: cursor 0.5s ease infinite;
+    animation: cursor 0.5s ease infinite;
     z-index: 0;
     display: flex;
     justify-content: center;

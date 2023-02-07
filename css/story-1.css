@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -53,12 +44,9 @@ body::-webkit-scrollbar {
     height: 100vh;
     font-size: 30px;
     text-align: left;
-    -webkit-animation: fadein 50s;
-            animation: fadein 50s;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation: fadein 50s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -100,8 +88,7 @@ body::-webkit-scrollbar {
     font-size: 4.2vw;
     text-align: left;
     font-weight: bold;
-    -webkit-animation: fadein 30s;
-            animation: fadein 30s;
+    animation: fadein 30s;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
     display: flex;

@@ -18,21 +18,12 @@
     height: 10vh;
     font-size: 4vw;
     color: #ffffff;
-    -webkit-animation: 10s time;
-            animation: 10s time;
+    animation: 10s time;
     font-family: "Song Myung", serif;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  @-webkit-keyframes time {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   @keyframes time {
     0% {
@@ -53,9 +44,9 @@
     align-items: center;
   }
   #root > div {
-    width: 10vw;
+    width: 100vw;
     height: 10vh;
-    font-size: 14vw;
+    font-size: 5.3vw;
     transition: 7s;
     color: #fff;
     font-family: "Song Myung", serif;
