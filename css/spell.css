@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/흑백.jpg);
+    background-size: cover;
+    grid-template-columns: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(243, 234, 234);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .box {
+    font-size: 1.6vw;
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px;
+    -webkit-animation: fadein 27s;
+            animation: fadein 27s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/흑백.jpg);
+    background-size: cover;
+    grid-template-columns: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(243, 234, 234);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .box {
+    margin-right: -5vw;
+    font-size: 5vw;
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    -webkit-animation: fadein 27s;
+            animation: fadein 27s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 115vh;
+    background: url(../pic/stars.jpg);
+    background-size: cover;
+  }
+  #root #text {
+    width: 100vw;
+    height: 115vh;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/stars.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  #root #text {
+    width: 100vw;
+    height: 100vh;
+    font-size: 4vw;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

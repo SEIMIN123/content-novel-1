@@ -1,0 +1,81 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .text {
+    width: 50vw;
+    height: 50vh;
+    z-index: 999;
+    transition: 0.1s;
+    color: rgba(112, 110, 110, 0.1);
+    font-family: "Song Myung", serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .text:hover {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(121, 0, 0);
+    font-size: 540px;
+    background: url(../pic/곤지암.gif);
+    background-size: cover;
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .text {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(121, 0, 0);
+    font-family: "Song Myung", serif;
+    background: url(../pic/곤지암.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 28vw;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

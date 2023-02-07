@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@mixin flex ($d, $j, $a){
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+  }
+  
+@mixin border {
+  border: 1px solid black;
+  }
+
+  @mixin mobile {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+  
+  @mixin pc {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @include pc {
+    #root {
+  
+      width: 100vw;
+      height: 100vh;
+      @include flex(flex,center,center);
+  
+      & > video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      @include flex(flex,center,center);
+        
+      }
+  
+      .text {
+  
+        width: 50vw;
+        height: 50vh;
+        z-index: 999;
+        transition: 0.1s;
+        color: rgba(112, 110, 110,0.1);
+        font-family: 'Song Myung', serif;
+        cursor: pointer;
+        @include flex(flex,center,center);
+      } 
+      
+      .text:hover {
+        width: 100vw;
+        height: 100vh;
+        color: rgb(121, 0, 0);
+        font-size: 540px;
+        background: url(../pic/곤지암.gif);
+        background-size: cover;
+      }
+    }
+  }
+
+  @include mobile {
+    #root {
+  
+      width: 100vw;
+      height: 100vh;
+      @include flex(flex,center,center);
+  
+      & > video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      @include flex(flex,center,center);
+        
+      }
+  
+      .text {
+  
+        width: 100vw;
+        height: 100vh;
+        color: rgb(121, 0, 0);
+        font-family: 'Song Myung', serif;
+        background: url(../pic/곤지암.gif);
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; 
+        background-size: contain;
+        font-size: 28vw;
+        z-index: 999;
+        @include flex(flex,center,center);
+      } 
+    }
+  }

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 5px solid #fff
+  }
+
+  50% {
+    border-right: 5px solid #000
+  }
+
+  100% {
+    border-right: 5px solid #fff
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@include pc {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    @include flex(flex, center, center);
+
+    &>video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+
+    }
+
+    .text {
+      z-index: 0;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 100px;
+      font-family: 'Song Myung', serif;
+      @include flex(flex, center, center);
+      animation: cursor 0.5s ease infinite;
+      cursor: pointer;
+    }
+  }
+}
+
+@include mobile {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    @include flex(flex, center, center);
+
+    &>video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+
+    }
+
+    .text {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 10vw;
+      font-family: 'Song Myung', serif;
+      animation: cursor 0.5s ease infinite;
+      z-index: 0;
+      @include flex(flex, center, center);
+    }
+  }
+}

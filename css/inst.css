@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 80vw;
+    height: 10vh;
+    font-size: 4vw;
+    color: #ffffff;
+    -webkit-animation: 10s time;
+            animation: 10s time;
+    font-family: "Song Myung", serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @-webkit-keyframes time {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes time {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 10vw;
+    height: 10vh;
+    font-size: 14vw;
+    transition: 7s;
+    color: #fff;
+    font-family: "Song Myung", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
