@@ -80,15 +80,13 @@
   
       .text {
   
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         color: rgb(121, 0, 0);
         font-family: 'Song Myung', serif;
         background: url(../pic/곤지암.gif);
         background-position: center center;
-        background-attachment: fixed;
         background-repeat: no-repeat; 
-        background-size: contain;
         font-size: 28vw;
         z-index: 999;
         @include flex(flex,center,center);
