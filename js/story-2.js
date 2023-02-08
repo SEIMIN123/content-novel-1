@@ -2,6 +2,7 @@ const content ="2. 보이다.```어릴적 앨범을 보면 유독 한가지 사�
 
 const text = document.getElementById('text');
 const text1= document.getElementById('text1');
+const button = document.querySelector('.button');
 
 let i = 0;
 
@@ -21,5 +22,10 @@ text.addEventListener('click', function () {
 
 text1.addEventListener('click', function () {
   let page = '../html/story-3.html';
+  location.href = page;
+});
+
+button.addEventListener('click', function () {
+  let page = 'https://seimin123.github.io/VER-1/';
   location.href = page;
 });

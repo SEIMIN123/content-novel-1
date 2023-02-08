@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
   }
   #text1 {
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     font-size: 30px;
     text-align: left;
     animation: fadein 50s;
@@ -53,6 +53,17 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .button {
+    width: 4vw;
+    height: 8vh;
+    margin-right: -90vw;
+    margin-top: -95vh;
+    position: absolute;
+    border-radius: 10px;
+    letter-spacing: 30px;
+    color: white;
+    cursor: pointer;
   }
 }
 @media (max-width: 800px) {
@@ -78,6 +89,7 @@ body::-webkit-scrollbar {
     margin: 4vh;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
+    z-index: 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -94,5 +106,18 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+  .button {
+    width: 4vw;
+    height: 8vh;
+    font-size: 2vw;
+    margin-right: -75vw;
+    margin-top: -98vh;
+    position: absolute;
+    border-radius: 10px;
+    letter-spacing: 30px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
   }
 }

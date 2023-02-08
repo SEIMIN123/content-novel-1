@@ -59,10 +59,23 @@
     animation-iteration-count: infinite;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
+    z-index: 0;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .button {
+    width: 4vw;
+    height: 8vh;
+    margin-right: -95vw;
+    margin-top: -85vh;
+    position: absolute;
+    border-radius: 10px;
+    letter-spacing: 30px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
   }
 }
 @media (max-width: 800px) {
@@ -104,8 +117,21 @@
     animation: fadein1 10s;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .button {
+    width: 4vw;
+    height: 8vh;
+    font-size: 2vw;
+    margin-right: -75vw;
+    margin-top: -136vh;
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
   }
 }

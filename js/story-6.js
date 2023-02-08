@@ -2,6 +2,7 @@ const content ="그 말을 듣자마자 닫혀있던 모든 오감에 소름이 
 
     
 const text = document.getElementById('text');
+const button = document.querySelector('.button');
 
 let i = 0;
 
@@ -17,5 +18,10 @@ setInterval(typing, 35);//35
 
 text.addEventListener('click', function () {
   let page = '../html/story-7.html';
+  location.href = page;
+});
+
+button.addEventListener('click', function () {
+  let page = 'https://seimin123.github.io/VER-1/';
   location.href = page;
 });

@@ -2,6 +2,7 @@ const content = "1. 태어나다.```나는 그분들만 안다면 아시는 참�
 
 const text = document.getElementById('text');
 const text1 = document.getElementById('text1');
+const button = document.querySelector('.button');
 
 let i = 0;
 
@@ -22,5 +23,10 @@ text.addEventListener('click', function () {
 });
 text1.addEventListener('click', function () {
   let page = '../html/story-2.html';
+  location.href = page;
+});
+
+button.addEventListener('click', function () {
+  let page = 'https://seimin123.github.io/VER-1/';
   location.href = page;
 });
