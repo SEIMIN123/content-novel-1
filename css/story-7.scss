@@ -51,6 +51,18 @@ body::-webkit-scrollbar {
       cursor: pointer;
       @include flex(flex, center, center);
     }
+    .button {
+
+      width: 4vw;
+      height: 8vh;
+      right: 2vw;
+      top: 1.5vw;
+      position: absolute;
+      border-radius: 10px;
+      letter-spacing: 30px;
+      color: white;
+      cursor: pointer;
+      }
   }
 }
 
@@ -58,7 +70,7 @@ body::-webkit-scrollbar {
   #root {
 
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background: url(../pic/stars.jpg);
     background-size: cover;
     background-position: center center;
@@ -67,7 +79,7 @@ body::-webkit-scrollbar {
 
     #text {
       width: 100vw;
-      height: 110vh;
+      height: 100vh;
       font-size: 4vw;
       text-align: left;
       font-weight: bold;
@@ -75,5 +87,19 @@ body::-webkit-scrollbar {
       color: rgb(255, 255, 255);
       @include flex(flex, center, center);
     }
+    .button {
+
+      width: 4vw;
+      height: 8vh;
+      font-size: 2vw;
+      right: 8vw;
+      top: 2vh;
+      position: absolute;
+      border-radius: 10px;
+      letter-spacing: 30px;
+      color: white;
+      z-index: 1;
+      cursor: pointer;
+      }
   }
 }

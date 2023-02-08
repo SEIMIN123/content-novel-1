@@ -51,6 +51,18 @@ body::-webkit-scrollbar {
       cursor: pointer;
       @include flex(flex, center, center);
     }
+    .button {
+
+      width: 4vw;
+      height: 8vh;
+      top: 5vh;
+      right: 2vw;
+      position: absolute;
+      border-radius: 10px;
+      letter-spacing: 30px;
+      color: white;
+      cursor: pointer;
+      }
   }
 }
 
@@ -74,5 +86,20 @@ body::-webkit-scrollbar {
       color: rgb(255, 255, 255);
       @include flex(flex, center, center);
     }
+
+    .button {
+
+      width: 4vw;
+      height: 8vh;
+      font-size: 2vw;
+      top: 6vh;
+      right : 10vw;
+      position: absolute;
+      border-radius: 10px;
+      letter-spacing: 30px;
+      color: white;
+      z-index: 1;
+      cursor: pointer;
+      }
   }
 }

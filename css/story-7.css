@@ -28,11 +28,22 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
   }
+  #root .button {
+    width: 4vw;
+    height: 8vh;
+    right: 2vw;
+    top: 1.5vw;
+    position: absolute;
+    border-radius: 10px;
+    letter-spacing: 30px;
+    color: white;
+    cursor: pointer;
+  }
 }
 @media (max-width: 800px) {
   #root {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background: url(../pic/stars.jpg);
     background-size: cover;
     background-position: center center;
@@ -41,7 +52,7 @@ body::-webkit-scrollbar {
   }
   #root #text {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     font-size: 4vw;
     text-align: left;
     font-weight: bold;
@@ -50,5 +61,18 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #root .button {
+    width: 4vw;
+    height: 8vh;
+    font-size: 2vw;
+    right: 8vw;
+    top: 2vh;
+    position: absolute;
+    border-radius: 10px;
+    letter-spacing: 30px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
   }
 }

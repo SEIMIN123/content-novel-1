@@ -67,7 +67,7 @@
   #root {
 
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background: url(../pic/room.jpg);
     background-size: cover;
     background-position: center center;
@@ -77,7 +77,7 @@
 
     #text {
       width: 100vw;
-      height: 100vh;
+      height: 110vh;
       font-size: 4vw;
       text-align: left;
       font-weight: bold;
@@ -91,8 +91,8 @@
       width: 4vw;
       height: 8vh;
       font-size: 2vw;
-      right: 5vw;
-      top: 0vh;
+      right: 6vw;
+      bottom: 1vh;
       position: absolute;
       border-radius: 10px;
       letter-spacing: 30px;
