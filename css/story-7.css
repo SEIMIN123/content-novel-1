@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 @media (max-width: 800px) {
   #root {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background: url(../pic/stars.jpg);
     background-size: cover;
     background-position: center center;
@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
   }
   #root #text {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     font-size: 4vw;
     text-align: left;
     font-weight: bold;
