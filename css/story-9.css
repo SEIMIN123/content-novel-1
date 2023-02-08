@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
     width: 4vw;
     height: 8vh;
     font-size: 2vw;
-    top: 6vh;
+    top: 3vh;
     right: 10vw;
     position: absolute;
     border-radius: 10px;
