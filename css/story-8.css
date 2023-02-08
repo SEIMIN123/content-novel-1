@@ -30,8 +30,8 @@ body::-webkit-scrollbar {
   #root .button {
     width: 4vw;
     height: 8vh;
-    right: 2vw;
-    top: 5vh;
+    right: 3vw;
+    top: 3.4vh;
     position: absolute;
     border-radius: 10px;
     letter-spacing: 30px;
